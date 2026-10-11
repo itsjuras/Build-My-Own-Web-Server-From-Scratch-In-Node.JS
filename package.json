@@ -1,0 +1,19 @@
+{
+  "name": "http-server-from-scratch",
+  "version": "0.1.0",
+  "description": "An HTTP/1.1 web server built from scratch in TypeScript on raw TCP sockets",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node --enable-source-maps dist/echo_server.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  }
+}
