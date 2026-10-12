@@ -156,6 +156,11 @@ async function serveClient(conn: TCPConn): Promise<void> {
 
         console.log('data', data);
         await soWrite(conn, data);
+
+        if(data.includes('q')) {
+            console.log("closing.")
+            break;
+        }
     }
 }
 
